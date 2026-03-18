@@ -1,1 +1,1 @@
-https://marimo213.github.io/zakrivayuschiy-teg-ad/
+https://github.com/Marimo213/zakrivayuschiy-teg-ad
