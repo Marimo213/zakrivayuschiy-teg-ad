@@ -11,6 +11,9 @@
 const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
+const dialogOpenButton = document.querySelector('[data-dialog-open]');
+const dialogCloseButton = document.querySelector('[data-dialog-close]');
+const saveDialog = document.querySelector('#save-dialog');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>
@@ -38,4 +41,18 @@ function setButtonText(heart, button) {
       500
     );
   }
+}
+
+if (dialogOpenButton && saveDialog) {
+  dialogOpenButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    saveDialog.showModal();
+  });
+}
+
+if (dialogCloseButton && saveDialog) {
+  dialogCloseButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    saveDialog.close();
+  });
 }
