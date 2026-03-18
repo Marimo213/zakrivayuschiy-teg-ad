@@ -1,0 +1,1 @@
+https://marimo213.github.io/zakrivayuschiy-teg-ad/
